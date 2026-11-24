@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>АСУТП | Автоматизация промышленных процессов</title>
+    <title>АСУТП | Визитка Фунтусов Е.А.</title>
     <style>
         /* === ПЕРЕМЕННЫЕ И БАЗОВЫЕ СТИЛИ === */
         :root {
@@ -283,7 +283,7 @@
             display: block;
         }
 
-        /* === СТРАНИЦА АРХИТЕКТУРЫ === */
+        /* === СТРАНИЦА БИОГРАФИИ === */
         .pyramid {
             display: flex;
             flex-direction: column;
@@ -326,7 +326,7 @@
             margin-top: 5px;
         }
 
-        /* === СТРАНИЦА ОБОРУДОВАНИЯ === */
+        /* === СТРАНИЦА ПРИМЕРЫ ПРОЕКТОВ === */
         .cards-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -541,7 +541,7 @@
     <!-- ШАПКА -->
     <header>
         <div class="nav-container">
-            <div class="logo" onclick="showPage('home')">Котосайт<span>.^_^</span></div>
+            <div class="logo" onclick="showPage('home')">MrEugenFTS1<span>.^_^</span></div>
             
             <!-- Кнопка мобильного меню -->
             <button class="mobile-menu-btn" onclick="toggleMenu()" aria-label="Открыть меню">☰</button>
@@ -549,8 +549,8 @@
             <nav id="main-nav">
                 <ul>
                     <li><a onclick="showPage('home'); toggleMenu()" class="nav-link active" data-page="home">Главная</a></li>
-                    <li><a onclick="showPage('arch'); toggleMenu()" class="nav-link" data-page="arch">Архитектура</a></li>
-                    <li><a onclick="showPage('hw'); toggleMenu()" class="nav-link" data-page="hw">Оборудование</a></li>
+                    <li><a onclick="showPage('arch'); toggleMenu()" class="nav-link" data-page="arch">Биография</a></li>
+                    <li><a onclick="showPage('hw'); toggleMenu()" class="nav-link" data-page="hw">Примеры проектов</a></li>
                     <li><a onclick="showPage('ind'); toggleMenu()" class="nav-link" data-page="ind">Отрасли</a></li>
                     <li><a onclick="showPage('contact'); toggleMenu()" class="nav-link" data-page="contact">Контакты</a></li>
                 </ul>
@@ -565,19 +565,19 @@
             <div class="hero">
                 <!-- ИЗОБРАЖЕНИЕ КОТА ПЕРВЫМ -->
                 <div class="hero-image-container">
-                    <img src="cat.png" alt="Толстый рыжий кот" class="hero-cat-image">
+                    <img src="images\cat.png" alt="Толстый рыжий кот" class="hero-cat-image">
                 </div>
                 
                 <!-- ТЕКСТОВЫЙ КОНТЕНТ -->
                 <div class="hero-content">
-                    <div class="hero-badge">⚡ Промышленная автоматизация 4.0</div>
-                    <h1>Интеллектуальные системы<br>управления процессами</h1>
+                    <div class="hero-badge">⚡ </div>
+                    <h1>Сайт-визитка<br>Фунтусов Е.А.</h1>
                     <p class="hero-desc">
-                        АСУТП — это комплекс программных и аппаратных средств, предназначенный для автоматизации 
-                        управления технологическим оборудованием на промышленных предприятиях. Мы проектируем системы, 
-                        которые повышают эффективность, безопасность и точность производства.
+                        Данный сайт создавался с целью реализации моего хобби - self -hosting. Позже я решил добавить ему функциональное назначение - презентация меня, как программиста АСУ ТП.
+                        В начале своей карьеры я работал инженером-конструктором, инженером-схемотехником, сервисным инженером по обслуживанию хромотографов и газоанализаторов, 
+                        инженером проектоировщиком КИПиА. Но последние 9 лет я работаю инженером-программистом АСУ ТП
                     </p>
-                    <a class="btn" onclick="showPage('arch')">Изучить архитектуру →</a>
+                    <a class="btn" onclick="showPage('arch')">Перейти к Биографии →</a>
 
                     <div class="stats-grid">
                         <div class="stat-card">
@@ -601,10 +601,23 @@
             </div>
         </section>
 
-        <!-- СТРАНИЦА 2: АРХИТЕКТУРА -->
+        <!-- СТРАНИЦА 2: Достижения -->
         <section id="arch" class="page">
-            <h2>Многоуровневая архитектура АСУТП</h2>
-            <p>Современная система автоматизации строится по пирамидальному принципу, обеспечивая сбор данных от датчика до уровня бизнес-планирования.</p>
+            <h2>Достижения</h2>
+            <p>2023 Благодарственное письмо за работу на Новопортовском УКПГ</p><br>
+            <p>2017 Сдал First Cambridge Exam (экзамен на знание английского - B2)</p><br>
+            <p>2014 г. Диплом с отличием магистратура  УГНТУ "Информатика и Вычислительная техника" (нужна ссылка на ВАК статьи)</p><br>
+
+            <h2>Обучение</h2>
+            <p>2025 Обучение работе с ПЛК МК-504 Нефтеавтоматика</p><br>
+            <p>2023 Обучение работе в системе Каскад WinCC OA (базовый курс) Сибком </p><br>
+
+
+            <h2>Статьи</h2>
+            <a href="https://habr.com/ru/articles/384479/?ysclid=mwt4nx4o6a793081895" target="_blank" rel="noopener noreferrer">Разработка игры на Processing с управлением через плату Arduino Uno</a><br>
+            <a href="https://habr.com/ru/articles/384689/" target="_blank" rel="noopener noreferrer">Разработка игры на Processing с управлением через плату Arduino Uno часть 2</a><br>
+            <a href="https://ogbus.ru/article/view/verifikaciya-masshtabnoj-modeli-obsadnoj-kolonny-v-sisteme-aba" target="_blank" rel="noopener noreferrer">Статья «Верификация масштабной модели обсадной колонны в системе ABAQUS при испытании на растяжение» Журнал «Нефтегазовое дело», 2014, № 2, с. 278–308, DOI: 10.17122/ogbus-2014-2-278-308. </a>
+            
             
             <div class="pyramid">
                 <div class="pyramid-level level-4">
@@ -626,41 +639,41 @@
             </div>
         </section>
 
-        <!-- СТРАНИЦА 3: ОБОРУДОВАНИЕ -->
+        <!-- СТРАНИЦА 3: Примеры проектов -->
         <section id="hw" class="page">
-            <h2>Аппаратные и программные компоненты</h2>
-            <p>Мы используем оборудование ведущих мировых и отечественных производителей (Siemens, Allen-Bradley, ОВЕН, Schneider Electric).</p>
+            <h2>Список реализованных проектов</h2>
+            <p>представлен ниже:</p>
 
             <div class="cards-grid">
                 <div class="card">
-                    <span class="card-icon">🧠</span>
-                    <h3>Программируемые логические контроллеры (ПЛК)</h3>
-                    <p>«Мозг» системы. Обрабатывают сигналы с датчиков и выдают команды на исполнительные механизмы по заданным алгоритмам.</p>
+                    <span class="card-icon">🛠️Siemens PCS7 +Wincc 7.4 + TiaPortal</span>
+                    <h3>2024-2026</h3><br><h3>ГТЭС-72 Ватьеганское месторождение. г.Когалым (10 командировок)</h3> 
+                    <p>Разработка системы отчетов по газу WINCC 7.4 + MS SQL Server. </p>
                 </div>
                 <div class="card">
-                    <span class="card-icon">📊</span>
-                    <h3>SCADA-системы</h3>
-                    <p>Программное обеспечение для визуализации технологического процесса, сбора данных и управления оператором.</p>
+                    <span class="card-icon">📊Codesys 3.5.17 + EasyBuilder + КРУГ 2000</span>
+                    <h3>2026</h3><br><h3>АНХК г. Ангарск</h3> 
+                    <p>Разработка ПО среднего уровня для ПЛК МК-504 (Нефтеавтоматика). Разработка проекта панели в среде EasyBuilder</p>
                 </div>
                 <div class="card">
-                    <span class="card-icon">📡</span>
-                    <h3>Удаленные узлы ввода-вывода</h3>
-                    <p>Позволяют распределить сбор сигналов по цеху и передать их на контроллер по промышленным сетям (Profinet, Modbus, Ethernet/IP).</p>
+                    <span class="card-icon">💾Codesys 3.5.17</span>
+                    <h3>2025</h3><br><h3>Расвумчорский рудник г. Кировск (2 командировки)</h3> 
+                    <p>Разработка ПО среднего уровня для контроллеров МК-504. Проведение заводских испытаний шкафов. Опрос энерго ячеек по Modbus RTU. Реверс инженринг программы с ПЛК Modicon (Telepace). Написание алгоритма управления калорифером</p>
                 </div>
                 <div class="card">
-                    <span class="card-icon">🌡️</span>
-                    <h3>Промышленные датчики</h3>
-                    <p>Измерение температуры, давления, уровня, расхода, вибрации и анализа газового состава среды.</p>
+                    <span class="card-icon">🌡️Siemens PCS7</span>
+                    <h3>2021-2023</h3><br><h3> УКПГ Новопортовского месторождения (9 командировок)</h3> 
+                    <p>ПНР позиций, подключение корзин EP200, вывод блочных позиций (настройка драйверов WinCC, отрисовка мнемосхем, редактирование сообщений, отработка с программистами средего уровня)</p>
                 </div>
                 <div class="card">
-                    <span class="card-icon">⚙️</span>
-                    <h3>Частотные преобразователи</h3>
+                    <span class="card-icon">⚙️Step7 + Tia Portal + WinCC OA</span>
+                    <h3>2020-2021</h3><br><h3> Тобольская и Новокузнецкая нефтебазы (3 командировки)</h3> 
                     <p>Плавный пуск и регулировка скорости электродвигателей насосов, вентиляторов и конвейеров для экономии энергии.</p>
                 </div>
                 <div class="card">
-                    <span class="card-icon">🛡️</span>
-                    <h3>Системы ПАЗ (Противоаварийная защита)</h3>
-                    <p>Независимые контуры безопасности (SIS), останавливающие процесс при выходе критических параметров за допустимые пределы.</p>
+                    <span class="card-icon">🛡️Delta V</span>
+                    <h3>2018-220</h3><br><h3> Салаватский НПЗ</h3> 
+                    <p>ПНР системы Delta V на установке производства водорода УПВ</p>
                 </div>
             </div>
         </section>
@@ -718,7 +731,7 @@
 
         <!-- СТРАНИЦА 5: КОНТАКТЫ -->
         <section id="contact" class="page">
-            <h2>Свяжитесь с нами</h2>
+            <h2>Свяжитесь со мной</h2>
             <p>Готовы обсудить модернизацию вашего производства или разработку проекта АСУТП «под ключ»?</p>
 
             <div class="contact-wrapper">
@@ -727,37 +740,37 @@
                         <span class="info-icon">📍</span>
                         <div>
                             <h3>Адрес</h3>
-                            <p>г. Москва, Инновационный центр «Сколково», ул. Инновационная, д. 5</p>
+                            <p></p>
                         </div>
                     </div>
                     <div class="info-block">
                         <span class="info-icon">📞</span>
                         <div>
                             <h3>Телефон</h3>
-                            <p>+7 (495) 123-45-67</p>
+                            <p></p>
                         </div>
                     </div>
                     <div class="info-block">
                         <span class="info-icon">✉️</span>
                         <div>
                             <h3>Email</h3>
-                            <p>info@asutp-pro.ru</p>
+                            <p>funtusov.ea@eksiton.ru</p>
                         </div>
                     </div>
                     <div class="info-block">
                         <span class="info-icon">🕒</span>
                         <div>
                             <h3>Режим работы</h3>
-                            <p>Пн-Пт: 09:00 - 18:00<br>Аварийная служба: 24/7</p>
+                            <p><br></p>
                         </div>
                     </div>
                 </div>
 
-                <form onsubmit="event.preventDefault(); alert('Заявка отправлена! Мы свяжемся с вами в ближайшее время.');">
-                    <input type="text" placeholder="Ваше имя" required>
-                    <input type="email" placeholder="Email" required>
-                    <input type="text" placeholder="Название предприятия">
-                    <textarea placeholder="Опишите вашу задачу..."></textarea>
+                <form onsubmit="sendRequest(event)">
+                    <input type="text" id="contact-name" name="name" placeholder="Ваше имя" required>
+                    <input type="email" id="contact-email" name="email" placeholder="Email" required>
+                    <input type="text" id="contact-company" name="company" placeholder="Название предприятия">
+                    <textarea id="contact-message" name="message" placeholder="Опишите вашу задачу..."></textarea>
                     <button type="submit" class="btn">Отправить запрос</button>
                 </form>
             </div>
@@ -798,6 +811,26 @@
         function toggleMenu() {
             const nav = document.getElementById('main-nav');
             nav.classList.toggle('open');
+        }
+
+        // Отправка формы через почтовый клиент (mailto:)
+        function sendRequest(event) {
+            event.preventDefault();
+
+            const name = document.getElementById('contact-name').value.trim();
+            const email = document.getElementById('contact-email').value.trim();
+            const company = document.getElementById('contact-company').value.trim();
+            const message = document.getElementById('contact-message').value.trim();
+
+            const subject = encodeURIComponent('Запрос с сайта от ' + (name || 'посетителя'));
+            const body = encodeURIComponent(
+                'Имя: ' + name + '\n' +
+                'Email: ' + email + '\n' +
+                'Предприятие: ' + (company || 'не указано') + '\n\n' +
+                'Задача:\n' + message
+            );
+
+            window.location.href = 'mailto:funtusov.ea@eksiton.ru?subject=' + subject + '&body=' + body;
         }
     </script>
 </body>
